@@ -15,3 +15,19 @@ function escreva (){
     document.write(tabuada + " x 10 = "+(tabuada*10)+"<br>");
     document.write("feito por" + nome);
 }
+
+function minhatabuada (){
+    for( let i = 1; i <= 10; i++){
+        document.write(tabuada do " + i + "<br>");
+        for(let j = 1; j<= 10; j++){
+         document.write(i + " x " + j + " = " +(j*i)+"<br>");
+    }
+    document.write("<br>");
+
+}
+
+function quadrado(){
+    for(let i = 1; i <= 20; i++){
+     document.write("0 quadrado de " + i + " é " (i*i)+ "<br>");
+    }
+}
