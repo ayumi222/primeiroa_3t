@@ -19,9 +19,9 @@ function escreva (){
 function minhatabuada (){
     for( let i = 1; i <= 10; i++){
         document.write(tabuada do " + i + "<br>");
-        for(let j = 1; j<= 10; j++){
-         document.write(i + " x " + j + " = " +(j*i)+"<br>");
-    }
+         for(let j = 1; j<= 10; j++){
+         document.write(i + " x " + j + " = " +(j*i)+"<br>"
+  }
     document.write("<br>");
 
 }
@@ -44,10 +44,29 @@ function quadrado(){
     
     
     
-    
-    function calcula(){
+
+
+    let op = ""
+    function operacao(ope){
+        op = ope;
+    }
+    function calcule (){
+        let v1 = document.getElementById("v1").value;
+        let v2 = document.getElementById("v2").value;
+        let r = 0;
+        if(operacao === "+"){
+            r = Number (v1) + number(v2)
+        }
+        document.getElementById("resultado").innergHtml = r;
+    }
+
+
+
+
+
     let c = document.getElementById("valor").value;
     let j = document.getElementById("juros").value;
     let r = c * (1 + (j/100));
     document.write("RESULTADO: " + r);
 }
+
