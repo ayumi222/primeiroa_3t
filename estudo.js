@@ -18,11 +18,10 @@ function escreva (){
 
 function minhatabuada (){
     for( let i = 1; i <= 10; i++){
-        document.write(tabuada do " + i + "<br>");
          for(let j = 1; j<= 10; j++){
-         document.write(i + " x " + j + " = " +(j*i)+"<br>"
-  }
-    document.write("<br>");
+         document.write(i + " x " + j + " = " +(j*i)+"<br>");  
+       }
+    }
 
 }
 
@@ -33,6 +32,8 @@ function quadrado(){
 }
     
     
+ 
+ 
     
     
     
@@ -42,10 +43,25 @@ function quadrado(){
     
     
     
-    
-    
+function moeda(atual)
+return atual.tolocalesgtring('pt-br,{style: 'currency'), currency: 'brl'});
 
-
+function calcula(){
+    let c = document.getElementById("value").value;
+    let j = document.getElementById(juros).value;
+    if (!number(c)){
+        alert("o valor do capital deve ser numerico")
+        document.getElementById("valor").value ="";
+        document.getElementById("valor").focus();
+        return
+    }
+    if(!number(j)){
+        alert("o valor do juros deve ser numerico")
+        document.getElementById("juros").value = "";
+        document.getElementById("juros").focus();
+    }
+    document.write("resultado: + r");
+}
     let op = ""
     function operacao(ope){
         op = ope;
@@ -68,5 +84,7 @@ function quadrado(){
     let j = document.getElementById("juros").value;
     let r = c * (1 + (j/100));
     document.write("RESULTADO: " + r);
+
 }
+
 
