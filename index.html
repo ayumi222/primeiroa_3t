@@ -8,15 +8,25 @@
     <script src="estudo.js"></script>
 </head>
 <body>
+    <div class="calculadora">
+
+        <div id="sptotal">
+            <span id="total">total:0,00</span>
+            <div>
 
    capital: <input id="valor" type="text"><br>
    juros(mensais): <input id="juros" type="text"><br>
+   nr de meses: <input id="meses" type="text"><br>
    <button onclick="calcula()">enviar</button>
-
+<div id="splistameses">
+    <span id="listameses"></span>
+    </div>
+        </div>
 
 <br><br><br><br>
 valor 1: <input id="v1" type="text"><br>
 <button onclick="operacao('+')>Soma></button>
+<button onclick="operacao('-')>Subtrair</button>
 
 </br>
 valor 2:<input id="v2" type="text"><br>
@@ -25,7 +35,3 @@ valor 2:<input id="v2" type="text"><br>
 
 </body>
 </html>
-
-capital: <input id="valor" type="text"><br>
-juros (mensais): <input id="juros" type="text"><br>
-nr de meses: <input id=
