@@ -1,1 +1,19 @@
+.calculadora{
+    background: rgb(134, 101, 74);
+    color: rgba(151, 168, 144, 0.596);
+    width: 200px;
+    padding: 10px;
+    text-align: center;
 
+}
+.calculadora input {
+    background: salmon;
+    color: rgb(190, 159, 132);
+    padding: 8px;
+}
+#sptotal {
+    background: silver;
+    color: snow;
+    padding: 10px;
+    margin-bottom: 10px;
+}
