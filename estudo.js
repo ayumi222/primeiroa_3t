@@ -67,6 +67,17 @@ function calcula(){
         document.getElementById("meses").value = "";
         document.getElementById("meses").focus();
 
+        let r = c;
+        let texto = "";
+        for(let m = 1; m <= t; m++){
+            r = c* (1 + (j / 100));
+            r = r;
+            texto+= m + ": " + moeda(r)+"<br>"
+        }
+
+        document.getElementById("total").innerHTML = moeda(r);
+
+
     document.write("resultado: + r");
 }
 let r = c;
