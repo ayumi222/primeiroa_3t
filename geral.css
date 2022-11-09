@@ -1,4 +1,4 @@
-calculadora{
+.calculadora{
     background: rgb(134, 101, 74);
     color: rgba(151, 168, 144, 0.596);
     width: 200px;
@@ -10,6 +10,11 @@ calculadora{
     background: salmon;
     color: rgb(190, 159, 132);
     padding: 8px;
+}
+.calculadora input:focus{
+    background: purple;
+    color:aqua;
+
 }
 #sptotal {
     background: silver;
@@ -26,6 +31,17 @@ calculadora{
     padding: 5px 10px;
     border: none;
 }
+#splistameses{
+    background: lightblue;
+    color: black;
+    text-align: start;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    border-color: blue;
+    border-width: 2px;
+    border-style: dashed;
+}
 .calculadora button:hover {
     background: blueviolet;
     color: aquamarine;
@@ -41,3 +57,6 @@ calculadora{
  font-size: 10px;
  margin-top: 10px;
 }
+
+
+   
