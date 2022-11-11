@@ -110,5 +110,21 @@ document.write("mes " + m + "- valor: " + moeda(r)+"<br>")
     document.write("RESULTADO: " + r);
 
 }
+function calculaESG () {
+    let a = 3;
+    let b = -2;
+    let c = 8;
+    delta = (b*b) - (4*a*c);
+    let raiz;
+    let x1, x2;
+if (delta < 0){
+ raiz = "nao tem raiz real";
+}else {
+    raiz = math.sqrt(delta);
+    x1 = ((-b)+raiz)/(2*a);
+    x2 = ((-b)-raiz)/(2*a);
+    raiz = "x1="+x1 + " x2="+x2;
+}
 
-
+    document.getElementById("raiz").value = delta;
+}
